@@ -1,14 +1,17 @@
-# Guessing Game
+# Guessing Game TCP
 
-This is the classic 'guessing game' in Rust.
+This is Steve Klabnik's "guessing game" in Rust redone as a TCP client/server.
+
+When a client connects to the server, the server generates a new random number and handles guesses until the correct guess is submitted.
 
 To install:
 
 ```bash
-$ git clone https://github.com/steveklabnik/guessing_game
+$ git clone https://github.com/nham/guessing_game
 $ cd guessing_game
 $ cargo build
-$ ./target/guessing_game
+$ ./target/guessing_game_tcp_server
+$ ./target/guessing_game_tcp_client
 ```
 
-I assume you have both Rust and Cargo installed.
+You must have both Rust and Cargo installed.
